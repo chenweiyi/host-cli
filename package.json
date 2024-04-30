@@ -1,6 +1,6 @@
 {
   "name": "easy-host-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "一个使用cli命令来管理host的小工具",
   "main": "index.js",
   "type": "module",
