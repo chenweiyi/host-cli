@@ -1,5 +1,5 @@
 {
-  "name": "hostcli",
+  "name": "easy-host-cli",
   "version": "1.0.0",
   "description": "一个使用cli命令来管理host的小工具",
   "main": "index.js",
@@ -8,21 +8,26 @@
     "host-cli": "bin/cli.js"
   },
   "scripts": {
-    "build": "tsup bin/cli.ts",
+    "build": "tsup",
     "build:ts": "tsc",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "release": "bumpp"
   },
+  "files": [
+    "bin",
+    "src"
+  ],
   "keywords": [],
   "author": "chenweiyi829@gmail.com",
   "license": "MIT",
-  "dependencies": {
-    "hosts-so-easy": "^1.2.9",
-    "minimist": "^1.2.8"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "hosts-so-easy": "^1.2.9",
+    "minimist": "^1.2.8",
     "@types/node": "^20.12.7",
     "prettier": "^3.2.5",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "bumpp": "^9.3.0"
   }
 }
