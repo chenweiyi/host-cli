@@ -13,6 +13,9 @@
     "format": "prettier . --write",
     "release": "bumpp"
   },
+  "repository": {
+    "url": "https://github.com/chenweiyi/host-cli"
+  },
   "files": [
     "bin",
     "src"
