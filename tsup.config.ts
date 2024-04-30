@@ -10,8 +10,11 @@ export default [
     dts: false,
     onSuccess: async () => {
       let cli = readFileSync('./bin/cli.cjs', 'utf8');
-      cli = cli.replace('Context = function(retry) {', 'var Context = function(retry) {')
+      cli = cli.replace(
+        'Context = function(retry) {',
+        'var Context = function(retry) {',
+      );
       writeFileSync('./bin/cli.cjs', cli);
-    }
+    },
   },
 ] satisfies Options[];
