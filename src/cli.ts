@@ -36,9 +36,9 @@ export default function main() {
     return;
   }
   if (key.includes('add')) {
-    addHost(castArray(argv.ip)[0], castArray(argv.host)[0]);
+    return addHost(castArray(argv.ip)[0], castArray(argv.host)[0]);
   } else if (key.includes('rm')) {
-    removeHost(castArray(argv.ip)[0], castArray(argv.host)[0]);
+    return removeHost(castArray(argv.ip)[0], castArray(argv.host)[0]);
   }
 }
 
