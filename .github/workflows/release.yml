@@ -34,8 +34,8 @@ jobs:
       - name: PNPM build
         run: pnpm run build
 
-      - uses: mmarchini-oss/npm-otp-publish@v0.16.0
-        with:
-          npm_token: ${{ secrets.NPM_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_actor: ${{ github.actor }}
+      - name: Publish to NPM
+        run: pnpm publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_CONFIG_PROVENANCE: true
