@@ -34,7 +34,7 @@ jobs:
       - name: PNPM build
         run: pnpm run build
 
-      - uses: mmarchini-oss/npm-otp-publish@v0
+      - uses: mmarchini-oss/npm-otp-publish@v0.16.0
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
