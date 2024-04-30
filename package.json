@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "host-cli": "bin/cli.cjs"
+    "easy-host-cli": "bin/cli.cjs"
   },
   "scripts": {
     "build": "tsup",
